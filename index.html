@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy Barrier</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="../css/js/script.js"> </script>
+
+    <header>
+
+        <div class="topnav" id="myTopnav">
+            <div class="logo" id="logo">
+                <img src="css/imagenes/BuddyB.png">
+                <h1>Buddy Barrier</h1>
+            </div>
+
+            <a href="index.html" class="active">Inicio</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="noticas.html">Noticias</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="Discord.html">Discord</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                <span class="bars">☰</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <h2>Torneos Españoles</h2>
+
+        <div class="infotorneo">
+            <a href="#"><img src="css/imagenes/torneo.jpg" class="imagen"></a>
+            <table class="mi-tabla">
+                <thead>
+                    <tr>
+                        <th id="encabezado1" class="encabezado" colspan="2">Próximos
+                            Torneos</th>
+                        <th id="encabezado2" class="encabezado" colspan="2">Torneos
+                            Finalizados</th>
+
+                    </tr>
+
+                </thead>
+                <script>
+
+                    document.getElementById('encabezado1').addEventListener('click', function () {
+                        mostrarFilas('grupo1');
+                        var columna = document.getElementById('encabezado1');
+                        columna.classList.add('activo');
+                        columna = document.getElementById('encabezado2');
+                        columna.classList.remove('activo');
+                        ocultarFilas('grupo2');
+                    });
+
+                    document.getElementById('encabezado2').addEventListener('click', function () {
+                        mostrarFilas('grupo2');
+                        ocultarFilas('grupo1');
+                        var columna = document.getElementById('encabezado2');
+                        columna.classList.add('activo');
+                        columna = document.getElementById('encabezado1');
+                        columna.classList.remove('activo');
+                    });
+
+                    function mostrarFilas(grupo) {
+                        var filas = document.getElementsByClassName(grupo);
+
+                        for (var i = 0; i < filas.length; i++) {
+                            filas[i].classList.remove('oculto');
+                        }
+                    }
+
+                    function ocultarFilas(grupo) {
+                        var filas = document.getElementsByClassName(grupo);
+
+                        for (var i = 0; i < filas.length; i++) {
+                            filas[i].classList.add('oculto');
+                        }
+                    }
+
+
+                </script>
+                <tbody>
+                    <tr class="grupo1">
+                        <td>Fecha 1n</td>
+                        <td>Torneo 1</td>
+                        <td>Lugar 1</td>
+                        <td><a href="#">Inscripción/Directo</a></td>
+                    </tr>
+                    <tr class="grupo1">
+                        <td>Fecha 2n</td>
+                        <td>Torneo 2</td>
+                        <td>Lugar 2</td>
+                        <td><a href="#">Inscripción/Directo</a></td>
+                    </tr>
+                    <tr class="grupo1">
+                        <td>Fecha 3n</td>
+                        <td>Torneo 3</td>
+                        <td>Lugar 3</td>
+                        <td><a href="#">Inscripción/Directo</a></td>
+                    </tr>
+                    <tr class="grupo1">
+                        <td>Fecha 4n</td>
+                        <td>Torneo 4</td>
+                        <td>Lugar 4</td>
+                        <td><a href="#">Inscripción/Directo</a></td>
+                    </tr>
+                    <tr class="grupo2">
+                        <td>Fecha 1</td>
+                        <td>Torneo 1</td>
+                        <td>Lugar 1</td>
+                        <td><a href="#">Inscripción</a>/<a href="#"></a>Directo</td>
+                    </tr>
+                    <tr class="grupo2">
+                        <td>Fecha 2</td>
+                        <td>Torneo 2</td>
+                        <td>Lugar 2</td>
+                        <td><a href="#">Inscripción</a>/<a href="#"></a>Directo</td>
+                    </tr>
+                    <tr class="grupo2">
+                        <td>Fecha 3</td>
+                        <td>Torneo 3</td>
+                        <td>Lugar 3</td>
+                        <td><a href="#">Inscripción</a>/<a href="#"></a>Directo</td>
+                    </tr>
+                    <tr class="grupo2">
+                        <td>Fecha 4</td>
+                        <td>Torneo 4</td>
+                        <td>Lugar 4</td>
+                        <td><a href="#">Inscripción</a>/<a href="#"></a>Directo</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+        <h2>Torneos Internacionales</h2>
+        <div class="eventos">
+            <div class="evento">
+                <div class="imagenevento">
+                    <img src="css/imagenes/torneo.jpg" alt="Evento 2">
+                </div>
+                <div class="informacion">
+                    <div class="titulo">Título del Evento 1</div>
+                    <div class="lugar">Lugar: Lugar del Evento 1</div>
+                    <div class="fecha">Fecha: 01 de enero de 2023</div>
+                    <div class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur,
+                        veniam
+                        ab?
+                        Similique, numquam ab quam cupiditate deleniti officiis facilis! Repellendus quos sit dolorum
+                        exercitationem quo quae quia blanditiis odit nam.</div>
+
+                    <div class="boton">Más Información</div>
+                </div>
+            </div>
+
+            <div class="evento">
+                <div class="imagenevento">
+                    <img src="css/imagenes/torneo.jpg" alt="Evento 2">
+                </div>
+                <div class="informacion">
+                    <div class="titulo">Título del Evento 2</div>
+                    <div class="lugar">Lugar: Lugar del Evento 2</div>
+                    <div class="fecha">Fecha: 15 de febrero de 2023</div>
+                    <div class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur,
+                        veniam
+                        ab?
+                        Similique, numquam ab quam cupiditate deleniti officiis facilis! Repellendus quos sit dolorum
+                        exercitationem quo quae quia blanditiis odit nam.</div>
+
+                    <div class="boton">Más Información</div>
+                </div>
+            </div>
+
+            <div class="evento">
+                <div class="imagenevento">
+                    <img src="css/imagenes/torneo.jpg" alt="Evento 2">
+                </div>
+                <div class="informacion">
+                    <div class="titulo">Título del Evento 3</div>
+                    <div class="lugar">Lugar: Lugar del Evento 2</div>
+                    <div class="fecha">Fecha: 20 de febrero de 2023</div>
+                    <div class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur,
+                        veniam
+                        ab?
+                        Similique, numquam ab quam cupiditate deleniti officiis facilis! Repellendus quos sit dolorum
+                        exercitationem quo quae quia blanditiis odit nam.</div>
+
+                    <div class="boton">Más Información</div>
+                </div>
+            </div>
+        </div>
+        <script>document.getElementById('logo').addEventListener('click', function () {
+                window.location.href = 'index.html';
+            });
+        </script>
+
+    </main>
+    <footer>
+        <div class="rounded-social-buttons">
+            <a class="social-button facebook" href="https://www.facebook.com/estudiorepenica" target="_blank"><i
+                    class="fab fa-twitter"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/estudiorepenica" target="_blank"><i
+                    class="fab fa-discord"></i></a>
+        </div>
+        <p>Buddy Barrier no está asociado ni tiene ninguna clase de relación con Nintendo, Nintendo of Europe o
+            Nintendo
+            España. Los textos e imágenes presentes en esta web pertenecen a sus respectivos autores.
+        </p>
+
+    </footer>
+    <button id="scrollToTopBtn">&#5123;</button>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        document.getElementById("scrollToTopBtn").addEventListener("click", scrollToTop);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy Barrier</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="../css/js/script.js"> </script>
+
+    <header>
+
+        <div class="topnav" id="myTopnav">
+            <div class="logo" id="logo">
+                <img src="css/imagenes/BuddyB.png">
+                <h1>Buddy Barrier</h1>
+            </div>
+
+            <a href="index.html">Inicio</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="noticas.html" class="active">Noticias</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="Discord.html">Discord</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                <span class="bars">☰</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="noticias">
+            <div class="noticia" id="noticia1">
+                <img src="css/imagenes/torneo.jpg" alt="Noticia 1">
+                <h2>Titulo de la Noticia 1</h2>
+            </div>
+
+            <div class="noticia" id="noticia2">
+                <img src="css/imagenes/torneo.jpg" alt="Noticia 2">
+                <h2>Titulo de la Noticia 2</h2>
+            </div>
+
+            <div class="noticia" id="noticia3">
+                <img src="css/imagenes/torneo.jpg" alt="Noticia 3">
+                <h2>Titulo de la Noticia 3</h2>
+            </div>
+
+            <div class="noticia" id="noticia4">
+                <img src="css/imagenes/torneo.jpg" alt="Noticia 4">
+                <h2>Titulo de la Noticia 4</h2>
+            </div>
+        </div>
+
+        <div id="noticia-completa" style="display:none">
+            <!-- Aquí se mostrará la noticia completa -->
+        </div>
+
+        <script>document.getElementById('noticia1').addEventListener('click', function () {
+                window.location.href = 'noticias/noticia1.html';
+            });
+
+            document.getElementById('noticia2').addEventListener('click', function () {
+                window.location.href = 'noticias/noticia2.html';
+            });
+
+            document.getElementById('noticia3').addEventListener('click', function () {
+                window.location.href = 'noticias/noticia3.html';
+            });
+
+            document.getElementById('noticia4').addEventListener('click', function () {
+                window.location.href = 'noticias/noticia4.html';
+            });
+            document.getElementById('logo').addEventListener('click', function () {
+                window.location.href = 'index.html';
+            });
+        </script>
+
+    </main>
+    <footer>
+        <div class="rounded-social-buttons">
+            <a class="social-button facebook" href="https://www.facebook.com/estudiorepenica" target="_blank"><i
+                    class="fab fa-twitter"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/estudiorepenica" target="_blank"><i
+                    class="fab fa-discord"></i></a>
+        </div>
+        <p>Buddy Barrier no está asociado ni tiene ninguna clase de relación con Nintendo, Nintendo of Europe o
+            Nintendo
+            España. Los textos e imágenes presentes en esta web pertenecen a sus respectivos autores.
+        </p>
+    </footer>
+    <button id="scrollToTopBtn">&#5123;</button>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+        document.getElementById("scrollToTopBtn").addEventListener("click", scrollToTop);
+
+
+        document.getElementById('logo').addEventListener('click', function () {
+            window.location.href = 'index.html';
+        });    
+    </script>
+</body>
+
+</html>
