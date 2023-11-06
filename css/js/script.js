@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	fullImg = document.getElementById("fullimagen");
 	x = document.getElementById("myTopnav");
 	fullImgBox = document.getElementById("fullimgbox");
-
-
+	empezando();
 });
 function empezando() {
 	var filas = document.getElementsByClassName('grupo1');
