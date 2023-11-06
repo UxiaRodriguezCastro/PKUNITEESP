@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 });
-
-window.onload = function () {
+function empezando() {
 	var filas = document.getElementsByClassName('grupo1');
 	var columna = document.getElementById('encabezado1');
 	columna.classList.add('activo');
