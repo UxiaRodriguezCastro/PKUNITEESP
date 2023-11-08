@@ -39,7 +39,7 @@
 
         <div class="paginas">
             <h2>Páginas de utilidad</h2>
-            <div class="pagina">
+            <div class="pagina" id="apiunite">
                 <img src="./css/imagenes/unite_api_logo.png">
                 <div>
                     <h3>Unite Api</h3>
@@ -49,7 +49,7 @@
                 </div>
 
             </div>
-            <div class="pagina">
+            <div class="pagina" id="hrom">
                 <img src="./css/imagenes/rom.png">
                 <div>
                     <h3>@HRom593
@@ -59,7 +59,7 @@
                 </div>
 
             </div>
-            <div class="pagina">
+            <div class="pagina" id="chicoeevee">
                 <img src="./css/imagenes/chicoeeevee.png">
                 <div>
                     <h3>@ElChicoEevee</h3>
@@ -68,7 +68,7 @@
 
             </div>
 
-            <div class="pagina">
+            <div class="pagina" id="pkmesp">
                 <img src="./css/imagenes/puniteesp.png">
                 <div>
                     <h3>@PKMUnite_ESP</h3>
@@ -116,6 +116,18 @@
 
         document.getElementById('logo').addEventListener('click', function () {
             window.location.href = 'index.html';
+        });
+        document.getElementById('apiunite').addEventListener('click', function () {
+            window.location.href = 'https://uniteapi.dev/';
+        });
+        document.getElementById('hrom').addEventListener('click', function () {
+            window.location.href = 'https://twitter.com/HRom593';
+        });
+        document.getElementById('chicoeevee').addEventListener('click', function () {
+            window.location.href = 'https://twitter.com/ElChicoEevee';
+        });
+        document.getElementById('pkmesp').addEventListener('click', function () {
+            window.location.href = 'https://twitter.com/PKMUnite_ESP';
         });
     </script>
 </body>
