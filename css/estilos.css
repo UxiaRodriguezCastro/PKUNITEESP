@@ -843,3 +843,87 @@ span {
   background: #fefefe;
   border-color: rgb(51, 76, 124);
 }
+
+.paginas {
+  width: 50%;
+  margin-inline: auto;
+}
+
+@media (max-width: 700px) {
+  .paginas {
+    width: 70%;
+    margin-inline: auto;
+
+  }
+}
+
+.pagina {
+  display: inline-flex;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.pagina:hover {
+  transform: scale(1.01);
+}
+
+@media (max-width: 700px) {
+  .pagina {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.pagina h3 {
+  font-size: 1.7rem;
+  margin-bottom: 5px;
+}
+
+.pagina p {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  width: 90%;
+}
+
+.pagina img {
+  flex: 0 0 12%;
+  min-width: 120px;
+  height: 8rem;
+  margin-right: 10px;
+}
+
+.pagina div {
+  padding-left: 2rem;
+}
+
+@media (max-width: 700px) {
+  .pagina img {
+    display: flex;
+    flex: 0 0 16%;
+    height: 8rem;
+    margin-right: 0;
+    margin-inline: auto;
+    padding-top: 1.5rem;
+  }
+
+  .pagina h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-inline: auto;
+  }
+
+  .pagina p {
+    display: flex;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+  }
+
+  .pagina div {
+    padding-left: 0;
+  }
+}
