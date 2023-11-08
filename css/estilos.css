@@ -927,3 +927,63 @@ span {
     padding-left: 0;
   }
 }
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-inline: auto;
+  padding-bottom: 2rem;
+}
+
+.column {
+  flex: 1;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.item {
+  margin-bottom: 1rem;
+}
+
+.item:hover {
+  transform: scale(1.09);
+}
+
+.item h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1250px) {
+  .item h3 {
+    font-size: .9rem;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .item h3 {
+    font-size: .7rem;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .item h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .column {
+    flex: 100%;
+  }
+}
