@@ -28,56 +28,27 @@
             <a href="eventos.html">Eventos</a>
             <a href="noticas.html" class="active">Noticias</a>
             <a href="recursos.html">Recursos</a>
-            <a href="Discord.html">Discord</a>
-
             <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
                 <span class="bars">☰</span>
             </a>
         </div>
     </header>
     <main>
-        <div class="noticias">
-            <div class="noticia" id="noticia1">
-                <img src="css/imagenes/torneo.jpg" alt="Noticia 1">
-                <h2>Titulo de la Noticia 1</h2>
-            </div>
+        <header>
+            <!-- ... (otras partes del encabezado) ... -->
 
-            <div class="noticia" id="noticia2">
-                <img src="css/imagenes/torneo.jpg" alt="Noticia 2">
-                <h2>Titulo de la Noticia 2</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar en noticias...">
+                <button onclick="buscarh2()">Buscar</button>
             </div>
+            <script src="./css/js/buscador.js"> </script>
 
-            <div class="noticia" id="noticia3">
-                <img src="css/imagenes/torneo.jpg" alt="Noticia 3">
-                <h2>Titulo de la Noticia 3</h2>
-            </div>
+        </header>
 
-            <div class="noticia" id="noticia4">
-                <img src="css/imagenes/torneo.jpg" alt="Noticia 4">
-                <h2>Titulo de la Noticia 4</h2>
-            </div>
+        <div class="noticias" id="noticiasContainer">
+
         </div>
-
-        <script>document.getElementById('noticia1').addEventListener('click', function () {
-                window.location.href = 'noticias/noticia1.html';
-            });
-
-            document.getElementById('noticia2').addEventListener('click', function () {
-                window.location.href = 'noticias/noticia2.html';
-            });
-
-            document.getElementById('noticia3').addEventListener('click', function () {
-                window.location.href = 'noticias/noticia3.html';
-            });
-
-            document.getElementById('noticia4').addEventListener('click', function () {
-                window.location.href = 'noticias/noticia4.html';
-            });
-            document.getElementById('logo').addEventListener('click', function () {
-                window.location.href = 'index.html';
-            });
-        </script>
-
+        <script src="./css/js/noticias.js"> </script>
     </main>
     <footer>
         <div class="rounded-social-buttons">

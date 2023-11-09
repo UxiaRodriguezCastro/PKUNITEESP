@@ -1,0 +1,23 @@
+[
+    {
+        "titulo": "Título del Evento 1",
+        "imagen": "css/imagenes/eventos_int/torneo.jpg",
+        "lugar": "Lugar del Evento 1",
+        "fecha": "01 de enero de 2023",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, veniam ab? Similique, numquam ab quam cupiditate deleniti officiis facilis! Repellendus quos sit dolorum exercitationem quo quae quia blanditiis odit nam."
+    },
+    {
+        "titulo": "Título del Evento 2",
+        "imagen": "css/imagenes/eventos_int/torneo.jpg",
+        "lugar": "Lugar del Evento 2",
+        "fecha": "15 de febrero de 2023",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, veniam ab? Similique, numquam ab quam cupiditate deleniti officiis facilis! Repellendus quos sit dolorum exercitationem quo quae quia blanditiis odit nam."
+    },
+    {
+        "titulo": "Título del Evento 3",
+        "imagen": "css/imagenes/eventos_int/torneo.jpg",
+        "lugar": "Lugar del Evento 3",
+        "fecha": "20 de febrero de 2023",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, veniam ab? Similique, numquam ab quam cupiditate deleniti officiis facilis! Repellendus quos sit dolorum exercitationem quo quae quia blanditiis odit nam."
+    }
+]

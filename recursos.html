@@ -27,9 +27,6 @@
             <a href="eventos.html">Eventos</a>
             <a href="noticas.html">Noticias</a>
             <a href="recursos.html" class="active">Recursos</a>
-            <a href="Discord.html">Discord</a>
-
-
             <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
                 <span class="bars">☰</span>
             </a>
@@ -92,36 +89,19 @@
         </div>
         <div class="guias">
             <h2>Guías de juego</h2>
-            <div class="grid-container">
-                <div class="column">
-                    <div class="item">
-                        <h3>Como dejar de trollear a tu equipo</h3>
-                        <img src="css/imagenes/torneo.jpg" alt="Imagen 1">
-                    </div>
-                    <div class="item">
-                        <h3>Guía completa para el support de hoy</h3>
-                        <img src="css/imagenes/torneo.jpg" alt="Imagen 2">
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="item">
-                        <h3>El poder de AMNESIAAA con Slowbro</h3>
-                        <img src="css/imagenes/torneo.jpg" alt="Imagen 3">
-                    </div>
-                    <div class="item">
-                        <h3>¡Flip, flip, fliiiip!</h3>
-                        <img src="css/imagenes/torneo.jpg" alt="Imagen 4">
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="item">
-                        <h3>Draftea sin morir en el intento</h3>
-                        <img src="css/imagenes/torneo.jpg" alt="Imagen 5">
-                    </div>
-                </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar en guias...">
+                <button onclick="buscarh3()">Buscar</button>
+            </div>
+            <script src="./css/js/buscador.js"> </script>
+            <div class="grid-container" id="guiasContainer">
+                <div class="column" id="column-1"></div>
+                <div class="column" id="column-2"></div>
+                <div class="column" id="column-3"></div>
             </div>
 
         </div>
+        <script src="./css/js/guias.js"> </script>
 
 
     </main>
