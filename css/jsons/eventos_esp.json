@@ -1,0 +1,58 @@
+[
+    {
+        "fecha": "2024-01-01",
+        "torneo": "Torneo 1",
+        "lugar": "Lugar 1",
+        "inscripcion": "#",
+        "directo": "#"
+    },
+    {
+        "fecha": "2024-02-15",
+        "torneo": "Torneo 2",
+        "lugar": "Lugar 2",
+        "inscripcion": "#",
+        "directo": "#"
+    },
+    {
+        "fecha": "2024-03-21",
+        "torneo": "Torneo 3",
+        "lugar": "Lugar 3",
+        "inscripcion": "#",
+        "directo": "#"
+    },
+    {
+        "fecha": "2024-04-10",
+        "torneo": "Torneo 4",
+        "lugar": "Lugar 4",
+        "inscripcion": "#",
+        "directo": "#"
+    },
+    {
+        "fecha": "2023-05-05",
+        "torneo": "Torneo 1",
+        "lugar": "Lugar 1",
+        "inscripcion": "#",
+        "directo": "#"
+    },
+    {
+        "fecha": "2023-06-20",
+        "torneo": "Torneo 2",
+        "lugar": "Lugar 2",
+        "inscripcion": "#",
+        "directo": "#"
+    },
+    {
+        "fecha": "2023-07-11",
+        "torneo": "Torneo 3",
+        "lugar": "Lugar 3",
+        "inscripcion": "#",
+        "directo": "#"
+    },
+    {
+        "fecha": "2023-08-30",
+        "torneo": "Torneo 4",
+        "lugar": "Lugar 4",
+        "inscripcion": "#",
+        "directo": "#"
+    }
+]

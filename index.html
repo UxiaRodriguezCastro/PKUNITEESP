@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="css/js/tablaeventos.js"></script>
 
 </head>
 
@@ -49,93 +50,8 @@
                     </tr>
 
                 </thead>
-                <script>
 
-                    document.getElementById('encabezado1').addEventListener('click', function () {
-                        mostrarFilas('grupo1');
-                        var columna = document.getElementById('encabezado1');
-                        columna.classList.add('activo');
-                        columna = document.getElementById('encabezado2');
-                        columna.classList.remove('activo');
-                        ocultarFilas('grupo2');
-                    });
-
-                    document.getElementById('encabezado2').addEventListener('click', function () {
-                        mostrarFilas('grupo2');
-                        ocultarFilas('grupo1');
-                        var columna = document.getElementById('encabezado2');
-                        columna.classList.add('activo');
-                        columna = document.getElementById('encabezado1');
-                        columna.classList.remove('activo');
-                    });
-
-                    function mostrarFilas(grupo) {
-                        var filas = document.getElementsByClassName(grupo);
-
-                        for (var i = 0; i < filas.length; i++) {
-                            filas[i].classList.remove('oculto');
-                        }
-                    }
-
-                    function ocultarFilas(grupo) {
-                        var filas = document.getElementsByClassName(grupo);
-
-                        for (var i = 0; i < filas.length; i++) {
-                            filas[i].classList.add('oculto');
-                        }
-                    }
-
-
-                </script>
-                <tbody>
-                    <tr class="grupo1">
-                        <td>Fecha 1n</td>
-                        <td>Torneo 1</td>
-                        <td>Lugar 1</td>
-                        <td><a href="#">Inscripción/Directo</a></td>
-                    </tr>
-                    <tr class="grupo1">
-                        <td>Fecha 2n</td>
-                        <td>Torneo 2</td>
-                        <td>Lugar 2</td>
-                        <td><a href="#">Inscripción/Directo</a></td>
-                    </tr>
-                    <tr class="grupo1">
-                        <td>Fecha 3n</td>
-                        <td>Torneo 3</td>
-                        <td>Lugar 3</td>
-                        <td><a href="#">Inscripción/Directo</a></td>
-                    </tr>
-                    <tr class="grupo1">
-                        <td>Fecha 4n</td>
-                        <td>Torneo 4</td>
-                        <td>Lugar 4</td>
-                        <td><a href="#">Inscripción/Directo</a></td>
-                    </tr>
-                    <tr class="grupo2">
-                        <td>Fecha 1</td>
-                        <td>Torneo 1</td>
-                        <td>Lugar 1</td>
-                        <td><a href="#">Inscripción</a>/<a href="#"></a>Directo</td>
-                    </tr>
-                    <tr class="grupo2">
-                        <td>Fecha 2</td>
-                        <td>Torneo 2</td>
-                        <td>Lugar 2</td>
-                        <td><a href="#">Inscripción</a>/<a href="#"></a>Directo</td>
-                    </tr>
-                    <tr class="grupo2">
-                        <td>Fecha 3</td>
-                        <td>Torneo 3</td>
-                        <td>Lugar 3</td>
-                        <td><a href="#">Inscripción</a>/<a href="#"></a>Directo</td>
-                    </tr>
-                    <tr class="grupo2">
-                        <td>Fecha 4</td>
-                        <td>Torneo 4</td>
-                        <td>Lugar 4</td>
-                        <td><a href="#">Inscripción</a>/<a href="#"></a>Directo</td>
-                    </tr>
+                <tbody id="tablaBody">
                 </tbody>
 
             </table>
@@ -182,6 +98,44 @@
         }
 
         document.getElementById("scrollToTopBtn").addEventListener("click", scrollToTop);
+    </script>
+    <script>
+
+        document.getElementById('encabezado1').addEventListener('click', function () {
+            mostrarFilas('grupo1');
+            var columna = document.getElementById('encabezado1');
+            columna.classList.add('activo');
+            columna = document.getElementById('encabezado2');
+            columna.classList.remove('activo');
+            ocultarFilas('grupo2');
+        });
+
+        document.getElementById('encabezado2').addEventListener('click', function () {
+            mostrarFilas('grupo2');
+            ocultarFilas('grupo1');
+            var columna = document.getElementById('encabezado2');
+            columna.classList.add('activo');
+            columna = document.getElementById('encabezado1');
+            columna.classList.remove('activo');
+        });
+
+        function mostrarFilas(grupo) {
+            var filas = document.getElementsByClassName(grupo);
+
+            for (var i = 0; i < filas.length; i++) {
+                filas[i].classList.remove('oculto');
+            }
+        }
+
+        function ocultarFilas(grupo) {
+            var filas = document.getElementsByClassName(grupo);
+
+            for (var i = 0; i < filas.length; i++) {
+                filas[i].classList.add('oculto');
+            }
+        }
+
+
     </script>
 </body>
 
