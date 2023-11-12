@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 html {
   min-height: 100%;
   position: relative;
+  font-family: 'Saira Semi Condensed';
 }
 
 body {
@@ -12,6 +15,10 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 0;
+  background-image: url('./imagenes/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(26, 38, 63);
 }
 
 main {
@@ -29,7 +36,7 @@ footer {
 @media screen and (max-width: 700px) {
   footer {
     position: relative;
-    background-color: cornflowerblue;
+    background-color: #6495ed;
     width: 100%;
     margin-top: 2rem;
 
@@ -69,7 +76,7 @@ h2 {
   text-align: center;
   width: 70%;
   margin-inline: auto;
-  color: rgb(51, 76, 124);
+  color: rgb(26, 38, 63);
   font-size: 2.5rem;
 }
 
@@ -77,14 +84,14 @@ h2 {
   font-size: 2rem;
 }
 
-.topnav a:hover {
+.topnav a:hover,
+.encabezado:hover {
   background-color: #8caeee;
   color: #FFFFFF;
 }
 
-.boton:hover,
-.encabezado:hover {
-  background-color: #cbdbf8;
+.boton:hover {
+  background-color: #0056b3;
   color: #FFFFFF;
 }
 
@@ -174,11 +181,13 @@ body {
 .mi-tabla {
   border-collapse: collapse;
   margin-left: 3rem;
-  width: 50%;
+  width: 60%;
   font-size: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
   .mi-tabla {
     margin-inline: auto;
     border-collapse: collapse;
@@ -194,9 +203,10 @@ body {
   margin-inline: auto;
   display: flex;
   align-items: flex-start;
+  margin-bottom: 6rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
   .infotorneo {
     width: 90%;
     flex-direction: column;
@@ -210,7 +220,7 @@ body {
 
 
 .encabezado {
-  background-color: #8caeee;
+  background-color: cornflowerblue;
   color: white;
   text-align: center;
 }
@@ -245,7 +255,8 @@ body {
 
 .imagen {
   width: 100%;
-  height: 12rem;
+  height: 15rem;
+  border: 1px solid rgb(26, 38, 63);
 }
 
 @media screen and (max-width: 700px) {
@@ -259,10 +270,12 @@ body {
   width: 70%;
   margin-inline: auto;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(26, 38, 63);
   padding: 10px;
   position: relative;
   margin-bottom: 3rem;
+  background-color: whitesmoke;
+  border-radius: 2rem;
 
 }
 
@@ -270,6 +283,7 @@ body {
   flex: 0 0 30%;
   margin-right: 10px;
   width: 80%;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -299,15 +313,17 @@ body {
 }
 
 .titulo {
-  color: rgb(51, 76, 124);
+  color: rgb(26, 38, 63);
   font-weight: bold;
   font-size: 2em;
-  margin-bottom: 5px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .lugar,
 .fecha {
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .descripcion {
@@ -330,7 +346,7 @@ body {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  background-color: #8caeee;
+  background-color: #007bff;
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -338,11 +354,12 @@ body {
   font-size: 0.9em;
   width: 12%;
   text-align: center;
+  border-radius: 1rem;
 }
 
 @media screen and (max-width: 700px) {
   .boton {
-    background-color: #8caeee;
+    background-color: #007bff;
     color: #fff;
     border: none;
     padding: 5px 10px;
@@ -357,6 +374,7 @@ body {
     left: 7rem;
     top: 1.5rem;
     text-align: center;
+    border-radius: 1rem;
   }
 }
 
@@ -561,9 +579,11 @@ span {
   width: calc(50% - 10px);
   margin: 2rem;
   margin-inline: auto;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(26, 38, 63);
   cursor: pointer;
   transition: transform 0.2s;
+  border-radius: 1rem;
+  background-color: whitesmoke;
 }
 
 @media (max-width: 700px) {
@@ -580,7 +600,7 @@ span {
 
   .noticia {
     width: calc(100% - 10px);
-    border: 1px solid #ccc;
+    border: 1px solid rgb(26, 38, 63);
     cursor: pointer;
     transition: transform 0.2s;
   }
@@ -588,13 +608,15 @@ span {
 
 .noticia img {
   max-width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .noticia h2 {
   margin: 10px;
   font-size: 2rem;
   margin-inline: auto;
-  color: rgb(51, 76, 124);
+  color: rgb(26, 38, 63);
 }
 
 .noticia:hover {
@@ -604,10 +626,11 @@ span {
 /* noticia*/
 
 .breadcrumb {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 2rem;
   margin-inline: auto;
   width: 80%;
+  font-weight: bold;
 }
 
 .contenedornoticia {
@@ -617,6 +640,10 @@ span {
   margin: 2rem;
   margin-inline: auto;
   margin-bottom: 4rem;
+  background-color: whitesmoke;
+  padding: 2.2rem;
+  border: 1px solid rgb(26, 38, 63);
+  border-radius: 1rem;
 }
 
 @media (max-width: 1300px) {
@@ -648,7 +675,7 @@ span {
 
 .articulo h1 {
   font-size: 3rem;
-  color: rgb(51, 76, 124);
+  color: rgb(26, 38, 63);
 }
 
 .imagennoticia img {
@@ -680,10 +707,12 @@ span {
   width: 60%;
   height: auto;
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(26, 38, 63);
   padding: 10px;
   margin-bottom: 20px;
   cursor: pointer;
+  background-color: whitesmoke;
+  border-radius: 1rem;
 }
 
 .recomendado:hover {
@@ -695,7 +724,7 @@ span {
     width: 90%;
     height: 6rem;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(26, 38, 63);
     padding: 10px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -718,7 +747,7 @@ span {
   margin: 0;
   font-size: 1rem;
   margin-top: 1.4rem;
-  color: rgb(51, 76, 124);
+  color: rgb(26, 38, 63);
 }
 
 .recomendados h2 {
@@ -727,7 +756,7 @@ span {
   text-align: left;
   width: 100%;
   margin-bottom: 2rem;
-  color: rgb(51, 76, 124);
+  color: rgb(26, 38, 63);
 }
 
 @media (max-width: 1300px) {
@@ -737,7 +766,7 @@ span {
     text-align: left;
     width: 90%;
     margin-bottom: 2rem;
-    color: rgb(51, 76, 124);
+    color: rgb(26, 38, 63);
   }
 }
 
@@ -805,7 +834,7 @@ span {
   padding: 0;
   text-decoration: none;
   text-align: center;
-  color: rgb(51, 76, 124);
+  color: rgb(26, 38, 63);
   font-size: 1.5625rem;
   font-weight: normal;
   line-height: 2em;
@@ -838,10 +867,10 @@ span {
 .rounded-social-buttons .social-button.facebook:focus,
 .rounded-social-buttons .social-button.instagram:hover,
 .rounded-social-buttons .social-button.instagram:focus {
-  color: rgb(51, 76, 124);
+  color: rgb(26, 38, 63);
   ;
   background: #fefefe;
-  border-color: rgb(51, 76, 124);
+  border-color: rgb(26, 38, 63);
 }
 
 .paginas {
@@ -865,9 +894,11 @@ span {
 .pagina {
   display: inline-flex;
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(26, 38, 63);
   padding: 1.2rem;
   margin-bottom: 2rem;
+  border-radius: 1rem;
+  background-color: whitesmoke;
 }
 
 .pagina:hover {
@@ -883,7 +914,7 @@ span {
 }
 
 .pagina h3 {
-  color: rgb(51, 76, 124);
+  color: rgb(26, 38, 63);
   font-size: 1.7rem;
   margin-bottom: 5px;
 }
@@ -916,7 +947,7 @@ span {
   }
 
   .pagina h3 {
-    color: rgb(51, 76, 124);
+    color: rgb(26, 38, 63);
     width: 100%;
     text-align: center;
     font-size: 1.6rem;
@@ -941,6 +972,7 @@ span {
   width: 100%;
   margin-inline: auto;
   margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .column {
@@ -950,9 +982,11 @@ span {
 }
 
 .item {
-  border: 1px solid #ccc;
+  border: 1px solid rgb(26, 38, 63);
   margin-bottom: 1rem;
   padding: 1rem;
+  background-color: whitesmoke;
+  border-radius: 1rem;
 }
 
 .item:hover {
@@ -960,7 +994,7 @@ span {
 }
 
 .item h3 {
-  color: rgb(51, 76, 124);
+  color: rgb(26, 38, 63);
   font-size: 1.5rem;
   text-align: center;
   width: 100%;
@@ -976,7 +1010,7 @@ span {
 
 @media (max-width: 1250px) {
   .item h3 {
-    color: rgb(51, 76, 124);
+    color: rgb(26, 38, 63);
     font-size: .9rem;
     text-align: center;
   }
@@ -985,7 +1019,7 @@ span {
 
 @media (max-width: 1000px) {
   .item h3 {
-    color: rgb(51, 76, 124);
+    color: rgb(26, 38, 63);
     font-size: .7rem;
     text-align: center;
   }
@@ -994,7 +1028,7 @@ span {
 
 @media (max-width: 768px) {
   .item h3 {
-    color: rgb(51, 76, 124);
+    color: rgb(26, 38, 63);
     font-size: 1.2rem;
     text-align: center;
   }
@@ -1020,16 +1054,17 @@ span {
 
 #searchInput {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(26, 38, 63);
   border-radius: 5px;
   font-size: 16px;
   width: 65%;
+  border-radius: 1rem;
 }
 
 @media (max-width: 1120px) {
   #searchInput {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(26, 38, 63);
     border-radius: 5px;
     font-size: 16px;
     width: 75%;
@@ -1039,7 +1074,7 @@ span {
 @media (max-width: 768px) {
   #searchInput {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(26, 38, 63);
     border-radius: 5px;
     font-size: 16px;
     width: 30%;
@@ -1053,7 +1088,8 @@ span {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 0.9em;
+  border-radius: 1rem;
 }
 
 .search-container button:hover {
