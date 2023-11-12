@@ -36,6 +36,10 @@ fetch('css/jsons/eventos_int.json')
             botonDiv.classList.add('boton');
             botonDiv.textContent = 'Más Información';
 
+            botonDiv.addEventListener('click', function () {
+                window.location.href = evento.link;
+            });
+
             informacionDiv.appendChild(tituloDiv);
             informacionDiv.appendChild(lugarDiv);
             informacionDiv.appendChild(fechaDiv);
