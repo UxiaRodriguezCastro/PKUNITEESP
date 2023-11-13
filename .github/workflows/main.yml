@@ -1,0 +1,19 @@
+name: Tu Flujo de Trabajo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ejemplo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del Repositorio
+        uses: actions/checkout@v2
+
+      - name: Ejecutar Acciones
+        run: |
+          # Accede al secreto
+          TWITCH_CLIENT_ID=$CLIENT_TWITCH_ID        
