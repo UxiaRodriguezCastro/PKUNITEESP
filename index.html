@@ -39,7 +39,15 @@
 
         <div class="infotorneo">
             <div id="twitch-iframe-container">
+                <button id="prevButton" class="nav-button" title="anterior"
+                    onclick="navigateChannel(-1)">&#8592;</button>
+                <button id="nextButton" class="nav-button" title="siguiente"
+                    onclick="navigateChannel(1)">&#8594;</button>
+                <!-- Aquí se mostrará el reproductor de Twitch -->
+                <div id="twitch-embed" class="embed"></div>
             </div>
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            <script src="css/js/twitch.js"></script>
             <table class="mi-tabla">
                 <thead>
                     <tr>

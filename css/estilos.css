@@ -28,7 +28,7 @@ main {
 footer {
   position: relative;
   bottom: 0;
-  background-color: cornflowerblue;
+  background-color: #425aa1;
   width: 100%;
 }
 
@@ -36,7 +36,7 @@ footer {
 @media screen and (max-width: 700px) {
   footer {
     position: relative;
-    background-color: #6495ed;
+    background-color: #425aa1;
     width: 100%;
     margin-top: 2rem;
 
@@ -54,7 +54,7 @@ footer p {
 
 .topnav {
   overflow: hidden;
-  background-color: cornflowerblue;
+  background-color: #425aa1;
   min-height: 3rem;
   width: 100%;
 }
@@ -220,7 +220,7 @@ body {
 
 
 .encabezado {
-  background-color: cornflowerblue;
+  background-color: #425aa1;
   color: white;
   text-align: center;
 }
@@ -780,7 +780,7 @@ span {
   font-size: 1.5rem;
   border: none;
   outline: none;
-  background-color: #8caeee;
+  background-color: #283763;
   /* Cambia este color si lo deseas */
   color: #ffffff;
   /* Cambia este color si lo deseas */
@@ -801,7 +801,7 @@ span {
     font-size: 1.2rem;
     border: none;
     outline: none;
-    background-color: #8caeee;
+    background-color: #283763;
     /* Cambia este color si lo deseas */
     color: #ffffff;
     /* Cambia este color si lo deseas */
@@ -1006,6 +1006,8 @@ span {
 .item img {
   max-width: 100%;
   height: auto;
+  margin-inline: auto;
+  display: flex;
 }
 
 @media (max-width: 1250px) {
@@ -1094,4 +1096,39 @@ span {
 
 .search-container button:hover {
   background-color: #0056b3;
+}
+
+#twitch-iframe-container {
+  position: relative;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #twitch-iframe-container {
+    position: relative;
+    width: 95%;
+  }
+
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: white;
+}
+
+#prevButton {
+  left: 10px;
+}
+
+#nextButton {
+  right: 10px;
 }
