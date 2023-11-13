@@ -91,7 +91,7 @@ h2 {
 }
 
 .boton:hover {
-  background-color: #0056b3;
+  background-color: #8caeee;
   color: #FFFFFF;
 }
 
@@ -346,7 +346,7 @@ body {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  background-color: #007bff;
+  background-color: #425aa1;
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -1085,7 +1085,7 @@ span {
 
 .search-container button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #425aa1;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -1095,7 +1095,7 @@ span {
 }
 
 .search-container button:hover {
-  background-color: #0056b3;
+  background-color: #8caeee;
 }
 
 #twitch-iframe-container {
