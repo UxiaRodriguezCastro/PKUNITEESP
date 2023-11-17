@@ -20,7 +20,7 @@ function loadLiveChannel(channelName) {
     // Cargar el nuevo reproductor de Twitch en el div recién creado
     new Twitch.Embed("twitch-embed", {
         width: '100%',
-        height: '250rem',
+        height: '290rem',
         channel: channelName,
         layout: "video",
     });

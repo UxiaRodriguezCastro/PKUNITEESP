@@ -1098,19 +1098,6 @@ span {
   background-color: #8caeee;
 }
 
-#twitch-iframe-container {
-  position: relative;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-  #twitch-iframe-container {
-    position: relative;
-    width: 95%;
-  }
-
-}
-
 .nav-button {
   position: absolute;
   top: 50%;
@@ -1131,4 +1118,121 @@ span {
 
 #nextButton {
   right: 10px;
+}
+
+#divSuperior {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+  width: 82%;
+  margin-inline: auto;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgb(26, 38, 63);
+}
+
+@media (max-width: 768px) {
+  #divSuperior {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    width: 70%;
+    margin-inline: auto;
+    margin-top: 2rem;
+    border-radius: 2rem;
+  }
+}
+
+#divInferior {
+  display: flex;
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  #divInferior {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+  }
+
+
+}
+
+#seccionIzquierda,
+#seccionDerecha {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  margin: 2rem;
+  border-radius: 2rem;
+  width: 90%;
+  border: 1px solid rgb(26, 38, 63);
+
+}
+
+@media (max-width: 768px) {
+
+
+  #seccionIzquierda,
+  #seccionDerecha {
+
+    width: 85%;
+    margin-inline: auto;
+
+  }
+}
+
+#seccionDerecha .mi-tabla {
+  margin-left: 0;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  #seccionDerecha .mi-tabla {
+    margin-left: 0;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}
+
+
+
+#twitch-iframe-container {
+  width: 70%;
+  margin-inline: auto;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #twitch-iframe-container {
+    width: 95%;
+    margin-inline: auto;
+    position: relative;
+  }
+
+
+}
+
+.infotorneo iframe {
+
+  width: 50%;
+  height: 16rem;
+}
+
+@media (max-width: 768px) {
+  .infotorneo iframe {
+
+    width: 90%;
+    height: 10rem;
+  }
+}
+
+#divSuperior p {
+  font-size: 1.4rem;
 }

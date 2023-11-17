@@ -26,8 +26,8 @@
                 <h1>Buddy Barrier</h1>
             </div>
 
-            <a href="index.html" class="active">Inicio</a>
-            <a href="torneos.html">Torneos</a>
+            <a href="index.html">Inicio</a>
+            <a href="torneos.html" class="active">Torneos</a>
             <a href="eventos.html">Eventos</a>
             <a href="noticas.html">Noticias</a>
             <a href="recursos.html">Recursos</a>
@@ -37,60 +37,36 @@
         </div>
     </header>
     <main>
+        <h2>Próximos torneos</h2>
 
-        <div id="divSuperior">
-            <h2>Bienvenidos a Buddy Barrier</h2>
-            <p>En Buddy Barrier, nos dedicamos a ser el núcleo de recursos para la comunidad hispanohablante de Pokémon
-                Unite. Nuestro
-                compromiso es ofrecer herramientas valiosas tanto para jugadores competitivos y casuales. Además, nos
-                enorgullecemos de
-                ser una ventana a eventos propios y de terceros, actividades y contenido relevante sobre el juego,
-                tambien buscamos que
-                nuestro servidor de discord sea un punto de encuentro activo para gente que busque con quien jugar,
-                hacer equipo, etc.</p>
-        </div>
+        <div class="infotorneo">
+            <iframe src="https://www.youtube.com/embed/8f5cPY4D1ik?si=0loXvF-8HMfCbEPX" frameborder="0"
+                allowfullscreen></iframe>
 
-        <!-- Div Inferior -->
-        <div id="divInferior">
+            <table class="mi-tabla">
+                <thead>
+                    <tr>
+                        <th id="encabezado1" class="encabezado" colspan="2">Próximos
+                            Torneos</th>
+                        <th id="encabezado2" class="encabezado" colspan="2">Torneos
+                            Finalizados</th>
 
-            <!-- Sección Izquierda (Creadores de Contenido Destacados) -->
-            <div id="seccionIzquierda">
-                <h2>Creadores Destacados</h2>
-                <div id="twitch-iframe-container">
-                    <button id="prevButton" class="nav-button" title="anterior"
-                        onclick="navigateChannel(-1)">&#8592;</button>
-                    <button id="nextButton" class="nav-button" title="siguiente"
-                        onclick="navigateChannel(1)">&#8594;</button>
-                    <!-- Aquí se mostrará el reproductor de Twitch -->
-                    <div id="twitch-embed" class="embed"></div>
-                </div>
-                <script src="https://embed.twitch.tv/embed/v1.js"></script>
-                <script src="css/js/twitch.js"></script>
-            </div>
+                    </tr>
 
-            <!-- Sección Derecha (Torneos Destacados) -->
-            <div id="seccionDerecha">
-                <h2>Torneos Destacados</h2>
-                <table class="mi-tabla">
-                    <thead>
-                        <tr>
-                            <th id="encabezado1" class="encabezado" colspan="2">Próximos
-                                Torneos</th>
-                            <th id="encabezado2" class="encabezado" colspan="2">Torneos
-                                Finalizados</th>
+                </thead>
 
-                        </tr>
+                <tbody id="tablaBody">
+                </tbody>
 
-                    </thead>
-
-                    <tbody id="tablaBody">
-                    </tbody>
-
-                </table>
-                <script src="css/js/tablaeventos.js"></script>
-            </div>
+            </table>
+            <script src="css/js/tablaeventos.js"></script>
 
         </div>
+        <h2>Torneos oficiales</h2>
+        <script src="./css/js/eventos.js"> </script>
+
+        <div class="eventos" id="eventosContainer"></div>
+
         <script>document.getElementById('logo').addEventListener('click', function () {
                 window.location.href = 'index.html';
             });
