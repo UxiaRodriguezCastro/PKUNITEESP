@@ -274,7 +274,7 @@ body {
   padding: 10px;
   position: relative;
   margin-bottom: 3rem;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 2rem;
 
 }
@@ -583,7 +583,7 @@ span {
   cursor: pointer;
   transition: transform 0.2s;
   border-radius: 1rem;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 700px) {
@@ -640,7 +640,7 @@ span {
   margin: 2rem;
   margin-inline: auto;
   margin-bottom: 4rem;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 2.2rem;
   border: 1px solid rgb(26, 38, 63);
   border-radius: 1rem;
@@ -711,7 +711,7 @@ span {
   padding: 10px;
   margin-bottom: 20px;
   cursor: pointer;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 1rem;
 }
 
@@ -898,7 +898,7 @@ span {
   padding: 1.2rem;
   margin-bottom: 2rem;
   border-radius: 1rem;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .pagina:hover {
@@ -985,7 +985,7 @@ span {
   border: 1px solid rgb(26, 38, 63);
   margin-bottom: 1rem;
   padding: 1rem;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 1rem;
 }
 
@@ -1123,7 +1123,7 @@ span {
 #divSuperior {
   text-align: center;
   padding: 2rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   width: 82%;
   margin-inline: auto;
   margin-top: 2rem;
@@ -1135,7 +1135,6 @@ span {
   #divSuperior {
     text-align: center;
     padding: 50px;
-    background-color: white;
     width: 70%;
     margin-inline: auto;
     margin-top: 2rem;
@@ -1165,7 +1164,7 @@ span {
 #seccionDerecha {
   flex: 1;
   padding: 20px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   margin: 2rem;
   border-radius: 2rem;
   width: 90%;
