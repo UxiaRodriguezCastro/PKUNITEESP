@@ -47,7 +47,7 @@ footer p {
   color: #FFFFFF;
   margin: 0;
   padding: 2rem;
-  font-size: .75rem;
+  font-size: .75em;
   font-weight: normal;
   text-align: center;
 }
@@ -66,7 +66,7 @@ footer p {
   text-align: center;
   padding: 1rem 2rem;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   min-height: 3rem;
   text-decoration: none;
 
@@ -77,11 +77,11 @@ h2 {
   width: 70%;
   margin-inline: auto;
   color: rgb(26, 38, 63);
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 
 .bars {
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .topnav a:hover,
@@ -158,7 +158,7 @@ body {
   padding-top: 1.4rem;
   margin: 0;
   color: #FFFFFF;
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 
 @media screen and (max-width: 700px) {
@@ -169,7 +169,7 @@ body {
     margin: 0;
     width: 100%;
     color: #FFFFFF;
-    font-size: 2.7rem;
+    font-size: 2.7em;
   }
 }
 
@@ -183,7 +183,7 @@ body {
   margin-left: 3rem;
   margin-top: 1rem;
   width: 60%;
-  font-size: 1rem;
+  font-size: 1em;
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -396,8 +396,9 @@ body {
     right: 0;
     position: relative;
     width: 50%;
-    font-size: 1rem;
+    font-size: 1em;
     margin-top: 2rem;
+    margin-left: 1.2rem;
     left: 7rem;
     top: 1.5rem;
     text-align: center;
@@ -453,7 +454,7 @@ body {
   color: #FFFFFF;
   width: 70%;
   padding: 2rem;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   text-align: center;
   margin-inline: auto;
   border-bottom-style: solid;
@@ -474,7 +475,7 @@ body {
   padding: 2rem;
   width: 75%;
   margin-inline: auto;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-family: 'Bertha', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: normal;
 }
@@ -521,7 +522,7 @@ body {
 }
 
 span {
-  font-size: 3rem;
+  font-size: 3em;
   color: white;
 }
 
@@ -641,7 +642,7 @@ span {
 
 .noticia h2 {
   margin: 10px;
-  font-size: 2rem;
+  font-size: 2em;
   margin-inline: auto;
   color: rgb(26, 38, 63);
 }
@@ -653,7 +654,7 @@ span {
 /* noticia*/
 
 .breadcrumb {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin: 2rem;
   margin-inline: auto;
   width: 80%;
@@ -701,7 +702,7 @@ span {
 }
 
 .articulo h1 {
-  font-size: 3rem;
+  font-size: 3em;
   color: rgb(26, 38, 63);
 }
 
@@ -772,14 +773,14 @@ span {
 
 .recomendado h3 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1em;
   margin-top: 1.4rem;
   color: rgb(26, 38, 63);
 }
 
 .recomendados h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   text-align: left;
   width: 100%;
   margin-bottom: 2rem;
@@ -789,7 +790,7 @@ span {
 @media (max-width: 1300px) {
   .recomendados h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-align: left;
     width: 90%;
     margin-bottom: 2rem;
@@ -804,7 +805,7 @@ span {
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   border: none;
   outline: none;
   background-color: #283763;
@@ -825,7 +826,7 @@ span {
     bottom: 20px;
     right: 20px;
     z-index: 99;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     border: none;
     outline: none;
     background-color: #283763;
@@ -862,7 +863,7 @@ span {
   text-decoration: none;
   text-align: center;
   color: rgb(26, 38, 63);
-  font-size: 1.5625rem;
+  font-size: 1.5625em;
   font-weight: normal;
   line-height: 2em;
   border-radius: 1.6875rem;
@@ -912,7 +913,7 @@ span {
 
 @media (max-width: 700px) {
   .paginas {
-    width: 70%;
+    width: 90%;
     margin-inline: auto;
 
   }
@@ -923,6 +924,7 @@ span {
   width: 100%;
   border: 1px solid rgb(26, 38, 63);
   padding: 1.2rem;
+  margin-inline: auto;
   margin-bottom: 2rem;
   border-radius: 1rem;
   background-color: rgba(255, 255, 255, 0.7);
@@ -935,19 +937,19 @@ span {
 @media (max-width: 700px) {
   .pagina {
     display: block;
-    width: 100%;
-    padding: 0;
+    width: 90%;
+    padding: 1rem;
   }
 }
 
 .pagina h3 {
   color: rgb(26, 38, 63);
-  font-size: 1.7rem;
+  font-size: 1.7em;
   margin-bottom: 5px;
 }
 
 .pagina p {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin-bottom: 5px;
   width: 90%;
 }
@@ -977,7 +979,7 @@ span {
     color: rgb(26, 38, 63);
     width: 100%;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.6em;
     margin-inline: auto;
   }
 
@@ -1022,7 +1024,7 @@ span {
 
 .item h3 {
   color: rgb(26, 38, 63);
-  font-size: 1.5rem;
+  font-size: 1.5em;
   text-align: center;
   width: 100%;
   margin: 0;
@@ -1040,7 +1042,7 @@ span {
 @media (max-width: 1250px) {
   .item h3 {
     color: rgb(26, 38, 63);
-    font-size: .9rem;
+    font-size: .9em;
     text-align: center;
   }
 
@@ -1049,7 +1051,7 @@ span {
 @media (max-width: 1000px) {
   .item h3 {
     color: rgb(26, 38, 63);
-    font-size: .7rem;
+    font-size: .7em;
     text-align: center;
   }
 
@@ -1058,7 +1060,7 @@ span {
 @media (max-width: 768px) {
   .item h3 {
     color: rgb(26, 38, 63);
-    font-size: 1.2rem;
+    font-size: 1.2em;
     text-align: center;
   }
 
@@ -1261,5 +1263,5 @@ span {
 }
 
 #divSuperior p {
-  font-size: 1.4rem;
+  font-size: 1.4em;
 }
